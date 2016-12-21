@@ -1,6 +1,35 @@
 <html>
 <head>
  <meta charset="utf-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ <script>
+$(document).ready(function(){
+
+$("#說明").click(function(){
+
+$("p").toggle();
+});
+
+$("#文字").click(function(){
+$("h1").addClass("yellow");
+$("p").addClass("blue");
+});
+$("#恢復").click(function(){
+$("h1").addClass("green");
+$("p").addClass("red");
+});
+
+$("#底色變換").click(function(){
+$("h1").css("background-color","black");
+$("p").css("background-color","yellow");
+});
+$("#底色恢復").click(function(){
+$("h1").css("background-color","#6495ed");
+$("p").css("background-color","#e0ffff");
+
+});
+});
+</script>
  </head>
  <style>
  	h1{
@@ -25,11 +54,24 @@
 	a:hover {color:#00ff00;} 
 
 	a:active {color:#3366ff;} 
+.blue{
 
+color:blue;}
+.yellow{
+
+color:yellow;}
+.red{
+
+color:red;}
+.green{
+
+color:green;}
  </style>
  <body style="background-color:skyblue">
  <h1>三國志13 with威力加強版</h1>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/YARxA0nadUc" frameborder="0" allowfullscreen></iframe>
+ <pre>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YARxA0nadUc" frameborder="0" allowfullscreen></iframe>				<iframe width="560" height="315" src="https://www.youtube.com/embed/0ldOrPXXIxU" frameborder="0" allowfullscreen></iframe>
+</pre>
 <br>
 <p>　　三國志系列在上一代因與前面幾代遊玩方式不同而飽受批評，雖說這次也與前幾代不大相</p>
 <p>同，但是批評風浪較小，而且其特別的遊玩方法也受到部分玩家喜愛。至於目前將推出的威力</p>
@@ -37,6 +79,14 @@
 <p>後的遊戲視為做好的遊戲。</p>
 <p>　　而在這只是給予簡單的官網介面及宣傳影片，最下面則是官網連結，有興趣的就自行點連</p>
 <p>結關注。</p>
+<button id="文字">文字變更</button>
+<button id="恢復">文字強制恢復</button>
+<br>
+<button id="底色變換">底色更換</button>
+<button id="底色恢復">底色恢復</button>
+<br>
+<button id="說明">顯示/隱藏說明</button>
+
 <br>
 <a href="http://www.gamecity.com.tw/sangokushi13/wpk/">
 <img src="http://i.imgur.com/xb07k0c.jpg"/>
